@@ -24,5 +24,5 @@ def get_winner(computer_choice, user_choice):
         
     ##tie
     else:
-        print ("Its a tie")
+        print ("Its a tie!")
 
