@@ -26,6 +26,9 @@ def get_winner(computer_choice, user_choice):
         computer_choice == user_choice
         print("It is a tie!")
         
-get_winner('Rock', 'Paper')
+def play():
+    get_computer_choice()
+    get_user_choice()
+    get_winner('Rock', 'Paper')
 
-
+play()
