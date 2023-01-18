@@ -4,6 +4,8 @@ def get_computer_choice():
     choices = ['Rock', 'Paper', 'Scissors']
     computer_choice = random.choice(choices)
     return computer_choice
+
+get_computer_choice()
     
 
 def get_user_choice():
@@ -11,6 +13,8 @@ def get_user_choice():
     return user_choice
 
 def get_winner(computer_choice, user_choice):
+    computer_choice = get_computer_choice()
+    user_choice = get_user_choice()
     if computer_choice == 'Rock' and user_choice == 'Scissors' or computer_choice == 'Paper' and user_choice == 'Rock' or computer_choice == 'Scissors' and user_choice == 'Paper':
         print("You won")
     
@@ -20,11 +24,6 @@ def get_winner(computer_choice, user_choice):
     else:
         print("It is a tie!")
         
-def play():
-    get_computer_choice()
-    get_user_choice()
-    get_winner()
+get_winner(computer_choice = get_computer_choice, user_choice = get_user_choice)
 
-
-play()
 
