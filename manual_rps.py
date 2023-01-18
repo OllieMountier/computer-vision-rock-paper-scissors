@@ -11,18 +11,10 @@ def get_user_choice():
     return user_choice
 
 def get_winner(computer_choice, user_choice):
-    if computer_choice == 'Rock' and user_choice == 'Scissors':
-        print("You won")
-    elif computer_choice == 'Paper' and user_choice == 'Rock':
-        print("You won")
-    if computer_choice == 'Scissors' and user_choice == 'Paper':
+    if computer_choice == 'Rock' and user_choice == 'Scissors' or computer_choice == 'Paper' and user_choice == 'Rock' or computer_choice == 'Scissors' and user_choice == 'Paper':
         print("You won")
     
-    elif computer_choice == 'Rock' and user_choice == 'Paper':
-        print("You lost")
-    elif computer_choice == 'Paper' and user_choice == 'Scissors':
-        print("You lost")
-    elif computer_choice == 'Scissors' and user_choice == 'Rock':
+    elif computer_choice == 'Rock' and user_choice == 'Paper' or computer_choice == 'Paper' and user_choice == 'Scissors' or computer_choice == 'Scissors' and user_choice == 'Rock':
         print("You lost")
 
     else:
