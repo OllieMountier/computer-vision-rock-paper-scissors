@@ -17,7 +17,7 @@ computer_choice = get_computer_choice()
 
 def get_winner(computer_choice, user_choice):
     if ((computer_choice == 'Scissors') and (user_choice == 'Rock')) or ((computer_choice == 'Rock') and (user_choice == 'Paper')) or ((computer_choice == 'Paper') and (user_choice == 'Scissors')):
-        print("You won")
+        print("You won!")
     
     elif ((computer_choice == 'Paper') and (user_choice == 'Rock')) or ((computer_choice == 'Scissors') and (user_choice == 'Paper')) or ((computer_choice == 'Rock') and (user_choice == 'Scissors')):
         print("You lost")
